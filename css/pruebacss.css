@@ -1,0 +1,30 @@
+/*INDEX*/
+#inicio {
+  position: relative;
+  height: 65%;
+  grid-area: main; }
+  #inicio img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; }
+  #inicio #titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: white; }
+
+#bienv {
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  padding: 3%; }
+  #bienv h2 {
+    color: #231E25;
+    font-family: "Anton", sans-serif;
+    font-size: 7vw;
+    text-align: center; }
+  #bienv main hr {
+    margin: 2% 0% 1%;
+    background-color: orange; }

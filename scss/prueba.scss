@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+/*INDEX*/
+
+#inicio{
+    position: relative;
+    height: 65%;
+    grid-area: main;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #titulo{
+        font-family: $TipografiaTitulo;
+        font-size: 6vw;
+        text-align: center;
+        color: $ColorTituloIndex;
+    }
+}
+
+#bienv{
+    background-color:white ;
+    display: grid;
+    justify-content: center;
+    padding: 3%;
+
+    h2{
+        color: $TituloPrincipal;
+        font-family: $TipografiaTitulo;
+        font-size: $FontSizeTitulo;
+        text-align: center;
+    }
+
+    main hr{
+        margin: 2% 0% 1%;
+        background-color: $HrColor;
+    }
+}
+
