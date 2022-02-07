@@ -3,15 +3,10 @@
 *{
     margin: 0;
     padding: 0;
+
     font-family: Helvetica, sans-serif
 }
 
-/*NAV BOOTSTRAP*/
-.navbar-nav{
-    padding-right: 7%;
-    PADDING-LEFT: 5%;
-    WIDTH: 99%
-}
 
 /* HEADER */
 header{
@@ -21,7 +16,10 @@ header{
 }
 /*NAV*/
 nav {
+    background-color: black;
     height: 75px;
+    text-align: center;
+    
 }
 
 nav ul {
@@ -33,7 +31,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    width: 13%;
+    width: 19%;
     height: 100%;
 }
 
@@ -53,9 +51,15 @@ nav ul li a:hover{
 .logo{
     display: inline-block;
     height: 9vh;
-    padding-left: 3%;
+   
+
 }
 
+#secciones{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
 
 /*GRILLA MAIN Y FOOTER*/
 #grillaMain{
@@ -95,30 +99,75 @@ footer h3 {
 
 .redes{
     display: inline-block;
-    padding-left: 35%;  
+    padding-left: 35%;
+    
 }
 
 .redes ul li {
     display: inline-block;
 }
 
+
 .iconos img {
     width: 50px;
     height: auto;
-    margin: 10px; 
+    margin: 10px;
+    
 }
 
 .redes img:hover {
     filter: opacity(50%);
 }
 
+
 /*MAIN INDEX*/
+
+#inicio{
+    position: relative;
+    height: 70%;
+    grid-area: main;
+}
+#titulo{
+    font-family: 'Anton', sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    padding: 15vw;
+}
+
+
+main img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+main h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 7vw;
+    text-align: center;
+}
+
+#bienv{
+    background-color:white ;
+    display: grid;
+    justify-content: center;
+    padding: 3%;
+}
+
+main hr{
+    margin: 2% 0% 1%;
+    background-color: orange;
+}
 
 
 /*SECCION CONTACTANOS*/
 
 *{
     font-family: Helvetica, sans-serif
+
 }
 
 #mainCont{
@@ -129,13 +178,16 @@ footer h3 {
     position: relative;
     height: 60vh;
 }
- 
+
+
 .tituloCont {
     font-family: 'Anton', sans-serif;
     font-size: 6vw;
     text-align: center;
     color: #231E25;
 }
+
+ 
 
 .fotoCont{
     position: absolute;
@@ -145,11 +197,11 @@ footer h3 {
     z-index: -1;
     display: block;
 }
-
-/*FORMULARIO CON BOOTSTRAP*/
+    
 #form{
     background-color: white;
     border-radius: 3px;
+    color: #999;
     font-size: 0.8em;
     padding: 19px;
     margin: auto;
@@ -168,7 +220,8 @@ input, textarea{
     outline: none;
     border: solid 1px #ccc;
     display:block;
-    width: 280px;      
+    width: 280px;
+        
 }
     
 label{
@@ -178,11 +231,14 @@ label{
 #botonenv{
     background-color: #BF5517;
     padding: 10px;
+
 }        
 
 #botonenv:focus{
     border-color: #231E25;
 }
+
+
 
 /*SECCION CERVEZAS*/
 
@@ -210,6 +266,7 @@ label{
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0.15, 0.15);
 }
 
+
 /*SECCION NOSOTROS*/
 
 #grillaNos{
@@ -234,6 +291,7 @@ label{
     width: 100%;
     height: 100%;
     z-index: 2;
+
 }
 
 #grillaNos2{
@@ -258,10 +316,10 @@ label{
 }
 
 iframe{
-    height: 100%;
-    padding-top: 0%;
-    padding-left: 11%;
-    width: 90%;
+    height: 50%;
+    padding-top: 11%;
+    padding-left: 10%;
+    width: 83%;
 }
 
 
@@ -292,15 +350,13 @@ aside{
 #h2Local{
     padding: 1%;
     color: black;
-    text-align: center;
-    font-family: 'Anton';
 }
-
 
 #imgLocal{
     position: unset;
     width: 100%;
     height: 20%;
+
 }
 
 #titleAside{
@@ -330,19 +386,6 @@ aside{
 
     }
 
-    /*NAV BOOTSTRAP*/
-    .navbar-nav{
-        PADDING-LEFT: 0%;   
-    }
-
-    .logo{
-        padding-left: 0%;
-    }
-
-    #navbarNav{ 
-        text-align: left;
-        padding-left: 3%;
-    }
 
     /*MAIN INICIO*/
     #inicio{
@@ -434,8 +477,8 @@ aside{
     }
 
     iframe{
-        height: 90%;
-        padding-top: 5%;
+        height: 50%;
+        padding-top: 15%;
         padding-left: 0%;
         width: 100%;
     }
@@ -453,12 +496,8 @@ aside{
 
     /*SECCION CONTACTANOS*/
 
-    #formulario{
-        padding: 17%;
-    }
-
     #form{
-        width: 100%;
+        width: 70%;
         height: 100%;
         padding: 15%;
     }
@@ -470,11 +509,6 @@ aside{
 
     /*FOOTER*/
 
-    footer h3{
-        height: 46%;
-        padding-bottom: 10%;
-    }
-
     footer {
         
         grid-template-columns:100%;
@@ -482,8 +516,7 @@ aside{
     }
     
     .redes{
-        padding-left: 37%; 
-        height: 26%;
+        padding-left: 42%; 
     }
 
 }
@@ -574,4 +607,5 @@ aside{
     main h2{
         font-size: 57px;
     }
+
 }
