@@ -135,8 +135,6 @@ header {
   align-items: stretch;
   padding: 50px;
   background-color: #ccc; }
-  #mainNosotros #grillaNosotros .info #text {
-    font-size: 15px; }
 
 #mainNosotros #grillaNosotros #visitanos {
   align-items: center;
@@ -166,18 +164,16 @@ header {
     height: 85%;
     z-index: -1;
     display: block; }
-  #mainContactanos #formulario {
-    padding: 150px; }
-    #mainContactanos #formulario #form {
-      background-color: white;
-      border-radius: 3px;
-      font-size: 0.8em;
-      padding: 19px;
-      margin: auto;
-      width: 400px;
-      height: 300px;
-      display: flex;
-      flex-direction: column; }
+  #mainContactanos #formulario #form {
+    background-color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+    padding: 19px;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column; }
 
 /*     FOOTER     */
 footer {
@@ -203,6 +199,57 @@ footer {
           filter: opacity(50%); }
 
 /*     Mobile     */
+@media only screen and (max-width: 499px) {
+  /*      NAV     */
+  /*     NAV GRILLA     */
+  header nav #navbarNav {
+    padding-left: 0%; }
+  /*     INDEX      */
+  /*     GRILLA INDEX     */
+  #grillaIndex #inicio #titulo {
+    font-size: 8vw;
+    padding-top: 55%; }
+  #grillaIndex #bienv #tituloIndex {
+    font-size: 5vw; }
+  /*     SECCION LOCALES     */
+  /*     GRILLA LOCALES     */
+  #titleAside {
+    text-align: center; }
+  #imgLocal {
+    width: 100%; }
+  /*     SECCION CERVEZAS     */
+  /*     GRILLA CERVEZAS     */
+  #mainCervezas {
+    padding: 4%; }
+  /*     SECCION NOSOTROS     */
+  /*     GRILLA NOSOTROS     */
+  #mainNosotros #grillaNosotros #tituloVis {
+    text-align: center; }
+  #mainNosotros #grillaNosotros #iframe iframe {
+    padding-top: 0%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    width: 100%; }
+  /*     SECCION CONTACTANOS     */
+  /*     GRILLA CONTACTANOS     */
+  #mainContactanos #tituloContactanos {
+    font-size: 7vw; }
+  #mainContactanos .fotoCont {
+    height: 100%; }
+  #mainContactanos #formulario {
+    padding: 100px;
+    padding-left: 9%; }
+  /*     FOOTER     */
+  /*     GRILLA FOOTER     */
+  footer {
+    display: flex;
+    flex-direction: column; }
+    footer .redes {
+      padding-left: 0%; }
+      footer .redes ol, footer .redes ul {
+        padding-left: 0%;
+        margin-bottom: 0%; } }
+
 /*     Tablet     */
 /*     Desktop    */
 @media only screen and (min-width: 992px) {
@@ -235,6 +282,12 @@ footer {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     row-gap: 20px; }
+    #grillaNosotros .info #text {
+      font-size: 15vh; }
+  /*     SECCION CONTACTANOS     */
+  /*     GRILLA CONTACTANOS     */
+  #formulario {
+    padding: 150px; }
   /*     FOOTER     */
   /*     GRILLA FOOTER     */
   footer {

@@ -233,10 +233,6 @@ header{
             align-items: stretch;
             padding: 50px;
             background-color: #ccc;
-
-            #text{
-                font-size: 15vh;
-            }
         }
 
         #visitanos{
@@ -285,8 +281,6 @@ header{
         
 
     #formulario{
-        padding: 150px;
-
         #form{
             background-color: white;
             border-radius: 3px;
@@ -352,7 +346,125 @@ footer {
 
 /*     Mobile     */
 @media only screen and (max-width: 499px){
+    /*      NAV     */
+    /*     NAV GRILLA     */
+    header{
+        nav{
+            #navbarNav{
+                padding-left: 0%;
+            }
+        }
+    }
+
+
+
+
+
+    /*     INDEX      */
+    /*     GRILLA INDEX     */
+    #grillaIndex{
+        #inicio{
+            #titulo{
+                font-size: 8vw;
+                padding-top: 55%;
+            }
+        }
+
+        #bienv{
+            #tituloIndex{
+                font-size: 5vw;
+            }
+        }
+    }
+
+
+
+
+    /*     SECCION LOCALES     */
+    /*     GRILLA LOCALES     */
+    #titleAside{
+        text-align: center;
+    }
+
+    #imgLocal{
+        width: 100%;
+    }
+
+
+
+
+    /*     SECCION CERVEZAS     */
+    /*     GRILLA CERVEZAS     */
+
+    #mainCervezas{
+        padding: 4%;
+    }
+    
+
+
+
+    /*     SECCION NOSOTROS     */
+    /*     GRILLA NOSOTROS     */
+    #mainNosotros{
+        #grillaNosotros{
+
+            #tituloVis{
+                text-align: center;
+            }
+
+            #iframe{
+                iframe{
+                    padding-top: 0%;
+                    padding-bottom: 5%;
+                    padding-left: 0%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+   
+
+
+
+    /*     SECCION CONTACTANOS     */
+    /*     GRILLA CONTACTANOS     */
+    #mainContactanos{
+        #tituloContactanos{
+            font-size: 7vw;
+        }
+
+        .fotoCont{
+            height: 100%;
+        }
+
+        #formulario{
+            padding: 100px;
+            padding-left: 9%;
+        }
+    }
+  
+    
+
+
+
+
+    /*     FOOTER     */
+    /*     GRILLA FOOTER     */
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .redes{
+            padding-left: 0%;
+
+            ol, ul{
+                padding-left: 0%;
+                margin-bottom: 0%;
+            }
+        }
+    }     
 }
+
 
 /*     Tablet     */
 @media only screen and (max-width:991px) and (min-width: 500px){   
@@ -397,7 +509,23 @@ footer {
     #grillaNosotros{
         @include grid(50% 50%, 50% 50%);
         row-gap: 20px;
+        .info{
+            #text{
+                font-size: 15vh
+            }
+        }
     }
+
+
+
+    
+
+    /*     SECCION CONTACTANOS     */
+    /*     GRILLA CONTACTANOS     */
+    #formulario{
+        padding: 150px;
+    }
+
 
 
 
