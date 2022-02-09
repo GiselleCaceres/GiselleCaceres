@@ -192,16 +192,17 @@ header{
         align-content: space-around;
         margin-bottom: 10%;
 
-        .textcervezas{
-            padding-top: 5%;
-        }
-
         .fotoCerv{
             position: unset;
             width: 100%;
             height: 70%;
             border-radius: 8px;
             box-shadow: 0 8px 8px 0 rgba(0, 0, 0.15, 0.15);
+        }
+
+        .subtitulos{
+            color: #666059;
+            padding-top: 5%;
         }
     }
 }
@@ -402,6 +403,28 @@ footer {
 
     #mainCervezas{
         padding: 4%;
+
+        #tituloCervezas{
+            font-size: 7vw;
+        }
+
+        #grillaCervezas{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10%;
+
+            #cerv2{
+                padding-top: 10%;
+            }
+
+            #cerv3{
+                padding-top: 10%;
+            }
+
+            #cerv4{
+                padding-top: 10%;
+            }
+        }
     }
     
 
@@ -513,11 +536,6 @@ footer {
     #grillaNosotros{
         @include grid(50% 50%, 50% 50%);
         row-gap: 20px;
-        .info{
-            #text{
-                font-size: 15vh
-            }
-        }
     }
 
 
