@@ -465,8 +465,10 @@ footer {
         }
 
         #formulario{
+            display: flex;
+            padding-top: 10%;
+            padding-bottom: 10%;
             padding: 100px;
-            padding-left: 7%;
         }
     }
     
@@ -496,6 +498,35 @@ footer {
 
 /*     Tablet     */
 @media only screen and (max-width:991px) and (min-width: 500px){   
+
+    /*     SECCION CONTACTANOS     */
+    /*     GRILLA CONTACTANOS     */
+    #mainContactanos{
+        #formulario{
+            display: flex;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding: 100px;
+        }
+    }
+
+
+
+
+    /*     FOOTER     */
+    /*     GRILLA FOOTER     */
+    footer {
+        display: flex;
+        flex-direction: column;
+        .redes{
+            padding-left: 0%;
+
+            ol, ul{
+                padding-left: 0%;
+                margin-bottom: 0%;
+            }
+        }
+    } 
 }
 
 /*     Desktop    */
